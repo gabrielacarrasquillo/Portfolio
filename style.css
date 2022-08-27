@@ -108,6 +108,6 @@ a:hover {
 }
 
 /* selected link */
-/* a:active {
-  color: blue;
-} */
+a:active {
+  color: #5d6d64ce;
+}
