@@ -59,8 +59,22 @@ body {
     font-family: 'Serif', Georgia;
 }
 
+.left-margin{
+    margin-left: 1rem ;
+}
+
+h3.head {
+    font-size: 30px;
+    margin: 40px 0 10px 0;
+    font-weight: 100;
+    line-height: 1.3;
+    font-family: 'Serif', garamond;
+    margin-left: 1rem;
+    margin-right: 20rem ;
+}
+
 h3.section-head {
-    font-size: 25px;
+    font-size: 20px;
     margin: 40px 0 10px 0;
     font-weight: 500;
     line-height: 1.3;
@@ -77,3 +91,23 @@ h3.section-head {
    border-radius: 10px;
    box-shadow: 10px;
 }
+
+/* unvisited link */
+a:link {
+  color: #5d6d64ce;
+}
+
+/* visited link */
+/* a:visited {
+  color: rgba(170, 170, 170, 0.802);
+} */
+
+/* mouse over link */
+a:hover {
+  color: #5d6d64;
+}
+
+/* selected link */
+/* a:active {
+  color: blue;
+} */
