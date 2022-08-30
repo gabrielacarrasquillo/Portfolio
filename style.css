@@ -69,13 +69,13 @@ h3.head {
     font-weight: 100;
     line-height: 1.3;
     font-family: 'Serif', garamond;
-    margin-left: 1rem;
-    margin-right: 20rem ;
+    /* margin-left: 1rem;
+    margin-right: 20rem ; */
 }
 
 h3.section-head {
     font-size: 20px;
-    margin: 40px 0 10px 0;
+    margin: 10px 0 10px 0;
     font-weight: 500;
     line-height: 1.3;
 }
@@ -112,19 +112,17 @@ a:active {
   color: #5d6d64ce;
 }
 
-@viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
-
-@-ms-viewport {
-  width: device-width ;
-}
-
-  /* @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 700px) {
     #head {
-
             margin: auto;
             max-width: 700px;
         }
-    }    */
+    #grid-container {
+            margin: auto;
+            max-width: 700px;
+        }
+        #grid-item {
+            margin: auto;
+            max-width: 700px;
+        }
+    }   
