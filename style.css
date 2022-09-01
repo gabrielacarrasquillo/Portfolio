@@ -1,8 +1,8 @@
 html, body {
-    margin: 0;
     background: #efeaea;
 }
 
+/* we're using this rn */
 .subtitle {
     text-transform:uppercase;
     font-size: 1rem;
@@ -14,8 +14,7 @@ html, body {
 .grid-container {
     display: grid;
     grid-template-columns: 450px 450px;
-    /* background-color: #2196F3; */
-    /* padding: 5px; */
+    gap: 3rem;
 }
 
 .grid-item {
@@ -100,11 +99,15 @@ h3.section-head {
 }
 
 .jobs .item:hover {
-   background: #f0ad6b3b;
+   background: #f0ad6b17;
    border: 1px solid transparent #b9b9b9;
-   transition-duration: 0.5s;
-   border-radius: 10px;
+   transition-duration: 0.2s;
+   border-radius: 5px;
    box-shadow: 10px;
+   border-color:#333;
+   border:1px;
+   border-style: solid;
+   gap: 3rem;
 }
 
 /* unvisited link */
@@ -127,17 +130,82 @@ a:active {
   color: #5d6d64ce;
 }
 
-  @media only screen and (min-width: 700px) {
-    #head {
-            margin: auto;
-            max-width: 700px;
-        }
-    #grid-container {
-            margin: auto;
-            max-width: 700px;
-        }
-    #grid-item {
-            margin: auto;
-            max-width: 700px;
-        }
-    }   
+
+/* mobile */
+@media (max-width:700px) {
+    body {
+        width:fit-content;
+        background: #efeaea;
+    }
+    
+    .section {
+    block-size:auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    width:fit-content;
+  }
+  .grid-item {
+    background-color: #efeaea;
+    /* border: 3px rgba(0, 0, 0, 0.8); */
+    padding: 30px;
+    font-size: 50;
+    text-align: center;
+    border-color:#333;
+    border:1px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 10px;
+    
+  }
+
+  .container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    width:fit-content;
+  }
+
+}
+
+    /* .chart-row {
+        display: block;
+    }
+
+    .chart-row .chart {
+        padding: 0;
+    }
+
+    .photo-section {
+        display: block;
+    }
+
+    .photo {
+        padding: 0;
+    }
+
+}
+
+/* These are the styles for ai2html */
+
+#g-template-laptop,
+#g-template-medium,
+#g-template-mobile {
+    display: none;
+}
+
+@media (max-width: 490px) {
+    #g-template-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 620px) {
+    #g-template-laptop {
+        display: block;
+    }
+}
+
+@media (min-width: 620px) {
+    #g-template-medium {
+        display: block;
+    }
+} 
